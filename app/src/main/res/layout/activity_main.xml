@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.modificator.sample.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <cn.modificator.circleindicator.CircleIndicator
+        android:id="@+id/indicator1"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        app:pointBgColor="@android:color/holo_orange_dark"
+        app:pointGravity="left"
+        app:ringColor="@android:color/holo_orange_light"
+        app:ringWidth="70%" />
+    <cn.modificator.circleindicator.CircleIndicator
+        android:id="@+id/indicator2"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        app:pointBgColor="@android:color/holo_orange_dark"
+        app:pointGravity="center"
+        app:ringColor="@android:color/holo_orange_light"
+        app:ringWidth="50%" />
+    <cn.modificator.circleindicator.CircleIndicator
+        android:id="@+id/indicator3"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        app:pointBgColor="@android:color/holo_orange_dark"
+        app:pointGravity="right"
+        app:ringColor="@android:color/holo_orange_light"
+        app:ringWidth="50%" />
+    <cn.modificator.circleindicator.CircleIndicator
+        android:id="@+id/indicator4"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        app:pointBgColor="@android:color/holo_orange_dark"
+        app:pointGravity="center"
+        app:ringColor="@android:color/holo_orange_light"
+        app:ringWidth="100%" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#aaaaaa" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="tab1"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="tab1"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="tab1"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="tab1"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <cn.modificator.circleindicator.CircleIndicator
+            android:id="@+id/mTabView"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            app:pointBgColor="#00000000"
+            app:pointGravity="fill"
+            app:ringColor="@android:color/holo_orange_light"
+            app:ringWidth="10%" />
+    </RelativeLayout>
+
+</LinearLayout>

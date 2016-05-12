@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CircleIndicator</string>
+    <declare-styleable name="indicator">
+        <attr name="pointGravity" format="enum">
+            <enum name="fill" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="left" value="2"/>
+            <enum name="right" value="3"/>
+        </attr>
+        <attr name="ringWidth" format="fraction" />
+        <attr name="pointBgColor" format="color" />
+        <attr name="ringColor" format="color" />
+    </declare-styleable>
+</resources>
